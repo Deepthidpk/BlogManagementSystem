@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvFormHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Blog"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#171C42"
+            android:paddingBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blog Title"
+            android:textStyle="bold"
+            android:textColor="#171C42"/>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter blog title"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            android:textStyle="bold"
+            android:textColor="#171C42"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter author name"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blog Content"
+            android:textStyle="bold"
+            android:textColor="#171C42"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:hint="Write your blog content here..."
+            android:gravity="top|start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnSaveBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Blog"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#304FFE"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

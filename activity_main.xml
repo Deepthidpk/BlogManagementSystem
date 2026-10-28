@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FA"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Blog Manager"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#171C42"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create and manage your blog posts"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Add New Blog"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#304FFE"/>
+
+    <TextView
+        android:id="@+id/tvBlogCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Blogs (0)"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#171C42"
+        android:paddingTop="18dp"
+        android:paddingBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/blogContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+</LinearLayout>
